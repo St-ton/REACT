@@ -1,5 +1,5 @@
 {
-  "homepage" : "https://St-ton.github.io/JavaScript/React/HOMEWORK/hw2101",  
+  "homepage": "https://St-ton.github.io/REACT/HomeWork/hw2101",
   "name": "hw2101",
   "version": "0.1.0",
   "private": true,
@@ -14,8 +14,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
