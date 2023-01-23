@@ -1,0 +1,44 @@
+.card {
+  width: 350px;
+  height: 150px;
+  border: 3px solid gray;
+  border-radius: 20px 20px 0 0;
+  background-color:azure;
+  padding: 15px;
+  /* box-shadow: 4px 4px gray; */
+  box-shadow: 5px 5px 10px 5px gray;
+  transition: 0.4s;  
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color:aqua;
+  border-radius: 0;
+  box-shadow: none;
+  transition: 0.4s;  
+}
+
+.titel {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 15px;
+}
+
+.age{
+  font-size: 26px;
+  color: black;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.lohn{
+font-size: 24px;
+font-weight: 700;
+  color: red;
+}
+.titel span, .age span, .lohn span {
+  font-size: 20px;
+  font-weight: 500;
+  color: gray;
+}

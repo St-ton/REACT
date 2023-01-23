@@ -1,0 +1,16 @@
+input {
+  padding: 10px 20px;
+  /* margin-right: 10px;   */
+  background-color:aliceblue;
+  border: 1px solid gray;
+  /* border: none; */
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px 40px;
+  background-color:aqua;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid gray
+  
+}

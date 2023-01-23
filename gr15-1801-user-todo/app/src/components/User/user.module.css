@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;  
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 100px;
+  background-color: lightblue;
+  border: 2px solid black;
+  padding: 5px 10px;
+  margin: 10px;  
+  box-shadow: 2px 2px lightgray;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.card:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px gray;
+  border-radius: 0 15% 15% 15%;
+  /* border: 2px solid blue; */
+  transition: 0.5s;
+  /* background-color: white; */
+}
+.card_title {
+  padding: 5px;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;  
+}
+.card_age {
+  color: red;
+  font-size: 18px;
+  font-weight: 700; 
+  padding: 5px;
+  margin: 0;
+}
