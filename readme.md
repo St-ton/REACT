@@ -20,7 +20,7 @@
 ---
 ### Task - Arsen
 
-[Praktikum](https://github.com/St-ton/REACT/tree/master/a13-2101-react-blog | Lection:
+[Praktikum](https://github.com/St-ton/REACT/tree/master/a13-2101-react-blog) | Lection:
 [a13-2101-react-blog](<https://vimeo.com/791427199/6aa2cdabae?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection:
