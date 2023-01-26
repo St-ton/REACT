@@ -11,8 +11,8 @@
 [Praktikum](https://github.com/St-ton/REACT/tree/master/gr16-2301-useState-add-del) | Lection:
 [gr16-2301-useState-add-del](<https://vimeo.com/791847569/22dac60bea?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
-[Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection:
-[](<>)<br/>
+[Praktikum](https://github.com/St-ton/REACT/tree/master/gr17-2501-useState-counter) | Lection:
+[gr17-2501-useState-counter](<https://vimeo.com/792585756/1b0f7c0cd1?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection:
 [](<>)<br/>
@@ -23,8 +23,8 @@
 [Praktikum](https://github.com/St-ton/REACT/tree/master/a13-2101-react-blog) | Lection:
 [a13-2101-react-blog](<https://vimeo.com/791427199/6aa2cdabae?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
-[Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection:
-[](<>)<br/>
+[Praktikum](https://github.com/St-ton/REACT/tree/master/a14-2701-) | Lection:
+[a14-2701-](<>)<br/>
 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection:
 [](<>)<br/>
