@@ -1,0 +1,16 @@
+div {
+  margin: 150px;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: aqua;
+  transition: 0.3s;
+}

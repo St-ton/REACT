@@ -1,0 +1,12 @@
+{
+  "notes": [
+    {
+      "id": 0,
+      "text": "React Router DOM"
+    },
+    {
+      "id": 1,
+      "text": "Axios vs Fetch"
+    }
+  ]
+}
