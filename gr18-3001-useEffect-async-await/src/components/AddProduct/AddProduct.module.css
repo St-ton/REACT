@@ -1,0 +1,29 @@
+input {
+  padding: 10px 20px;
+  background-color: aliceblue;
+  border: 1px solid gray;
+  border-right: none;
+  font-size: 20px;
+  color: black;
+  box-shadow: 5px 5px lightgray;
+}
+::placeholder {
+  color: lightgray;
+}
+
+input:focus {
+  outline: none;
+}
+
+.input1 {
+  border-radius: 10px 0 0 10px;
+}
+.button {
+  cursor: pointer;
+  padding: 10px 90px;
+  background-color: aqua;
+  border-radius: 0 10px 10px 0;
+  border: 1px solid gray;
+  font-size: 20px;
+  box-shadow: 5px 5px lightgray;
+}

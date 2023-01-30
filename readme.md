@@ -14,9 +14,14 @@
 [Praktikum](https://github.com/St-ton/REACT/tree/master/gr17-2501-useState-counter) | Lection:
 [gr17-2501-useState-counter](<https://vimeo.com/792585756/1b0f7c0cd1?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
+[Praktikum](https://github.com/St-ton/REACT/tree/master/gr18-3001-useEffect-async-await) | Lection:
+[gr18-3001-useEffect-async-await](<https://vimeo.com/794103393/d28a749701?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
+
+[Praktikum](https://github.com/St-ton/REACT/tree/master/gr19-0102-) | Lection:
+[gr19-0102-](<>)<br/>
+
 [Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection:
 [](<>)<br/>
-
 ---
 ### Task - Arsen
 

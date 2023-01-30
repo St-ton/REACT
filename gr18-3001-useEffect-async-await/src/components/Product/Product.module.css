@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.card {
+  display: block;
+  width: 450px;
+  height: 180px;
+  padding: 10px 20px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  box-shadow: 5px 5px lightgray;
+}
+
+.card:hover {
+  box-shadow: none;
+}
+
+.title,
+.id {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.title_un {
+  font-size: 20px;
+  color: lightgray;
+  margin-bottom: 10px;
+  text-decoration: line-through;
+}
+
+.price {
+  display: block;
+  font-size: 22px;
+  font-weight: 500;
+  color: blue;
+  margin-bottom: 15px;
+}
+
+.price_hight {
+  font-size: 22px;
+  font-weight: 900;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.title span,
+.price span,
+.price_hight span,
+.id span {
+  font-size: 18px;
+  font-weight: 500;
+  color: gray;
+  margin-right: 10px;
+}
+
+.price span {
+  margin-right: 45px;
+}
+
+.button:hover {
+  box-shadow: none;
+  transition: 0.4s;
+}
+.button {
+  font-size: 10px;
+  padding: 2px 3px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  margin: 5px 2px 0 0;
+  cursor: pointer;
+  color: black;
+  box-shadow: 3px 3px lightgray;
+  transition: 0.5s;
+}
+.b_red {
+  margin-left: 5px;
+  background-color: lightcoral;
+}
+.b_green {
+  align-items: center;
+  margin-left: 10px;
+  background-color: lightgreen;
+}
+
+.b_del {
+  padding: 5px 40px;
+  margin-left: 35%;
+  background-color: red;
+  font-size: 16px;
+  color: white;
+}
+/* .free {
+  display: block;
+  color: red;
+  background-color: bisque;
+  font-size: 42px;
+  font-weight: 500;
+  margin-left: -40px;
+  margin-bottom: 15px;
+} */
