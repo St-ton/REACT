@@ -8,4 +8,4 @@ HW-25.01
 На карточках с товарами должны быть кнопки, которые позволяют увеличивать или уменьшать количество товара в корзине. Если количество достигло нуля, товар должен удалиться.
 Внизу должно отображаться общее количество товаров и общая цена.
 
-<p align="left"><img src="https://github.com/St-ton/REACT/tree/master/HomeWork/hw2501/he2501.jpeg" width="500"></p>
+<p align="left"><img src="https://github.com/St-ton/REACT/blob/master/HomeWork/hw2501/hw2501.jpeg" width="500"></p>

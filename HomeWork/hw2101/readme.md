@@ -6,4 +6,4 @@ HW-21.01
 
 Необходимо реализовать React приложение. Оно должно отображать карточки с пользователями. Данные должны храниться в массиве. Карточки могут быть стилизованы произвольно Работу необходимо сдать в виде ссылки на GIT репозиторий. Напомню, что git init необходимо вызывать прямо внутри папки app.
 
-<p align="left"><img src="https://github.com/St-ton/REACT/tree/master/HomeWork/hw2101/hw2101.jpeg" width="500"></p>
+<p align="left"><img src="https://github.com/St-ton/REACT/blob/master/HomeWork/hw2101/hw2101.jpeg" width="500"></p>
