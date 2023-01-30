@@ -17,11 +17,13 @@ export default function ProductCard({ id, title, price, count, updateBasket, han
   return (
     <div className={p.card}>
       <h3 className={p.titel}>{title}</h3>
-      <p className={p.price}>Price: {price}</p>
-      <p className={p.count}>Count: {count}</p>
-      <button className={p.button1} onClick={handleIncrease}>+</button>
-      <button className={p.button1} onClick={handleDecrease}>-</button>
-      <button className={p.button2} onClick={() => handleRemove(id)}>Remove</button>
+      <p className={p.price}>Price: {price} $</p>
+      <div>
+        <button className={p.button1} onClick={handleIncrease}>+</button>
+        <span className={p.count}>{count}</span>
+        <button className={p.button1} onClick={handleDecrease}>-</button>
+        <button className={p.button2} onClick={() => handleRemove(id)}>Remove</button>
+        </div>
     </div>
   );
 };

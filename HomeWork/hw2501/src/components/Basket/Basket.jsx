@@ -26,7 +26,7 @@ export default function Basket({ products })
 
   return (
     <div className={b.card}>
-      <h2>Корзина товаров</h2>
+      <h2>Shopping cart</h2>
       {basket.map((product) => (
         <ProductCard
           key={product.id}
@@ -39,7 +39,7 @@ export default function Basket({ products })
         />
       ))}
       <p className={b.total_count}>Total Count: {totalCount}</p>
-      <p className={b.total_price}>Total Price: {totalPrice}</p>
+      <p className={b.total_price}>Total Price: {totalPrice} $</p>
     </div>
   );
 };
