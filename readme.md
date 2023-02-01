@@ -1,7 +1,7 @@
-### HomeWork [**--> Hier <--**](https://github.com/St-ton/REACT/tree/master/HomeWork/)<br/>
+### React HomeWork [**--> Hier <--**](https://github.com/St-ton/REACT/tree/master/HomeWork/)<br/>
 
 ---
-### KlassWork - Hayk 
+### React KlassWork - Hayk 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/gr14-1601-create-app/) | Lection:
 [gr14-1601-create-app](<https://vimeo.com/789705093/b87c37c186?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
@@ -14,16 +14,19 @@
 [Praktikum](https://github.com/St-ton/REACT/tree/master/gr17-2501-useState-counter) | Lection:
 [gr17-2501-useState-counter](<https://vimeo.com/792585756/1b0f7c0cd1?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
-[Praktikum](https://github.com/St-ton/REACT/tree/master/gr18-3001-useEffect-async-await) | Lection:
-[gr18-3001-useEffect-async-await](<https://vimeo.com/794103393/d28a749701?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
+[Praktikum](https://github.com/St-ton/REACT/tree/master/gr18-3001-1-useEffect-useState-async-await) | Lection:
+[gr18-3001-useEffect-useState-async-await](<https://vimeo.com/794103393/d28a749701?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
-[Praktikum](https://github.com/St-ton/REACT/tree/master/gr19-0102-) | Lection:
-[gr19-0102-](<>)<br/>
+[Praktikum](https://github.com/St-ton/REACT/tree/master/gr19-0102-2-useEffect-useState-async-await) | Lection:
+[gr19-0102-2-useEffect-useState-async-await](<https://vimeo.com/794852024/db6bc1498d?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
+
+[Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection:
+[](<>)<br/>
 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection:
 [](<>)<br/>
 ---
-### Task - Arsen
+### React Task - Arsen
 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/a13-2101-react-blog) | Lection:
 [a13-2101-react-blog](<https://vimeo.com/791427199/6aa2cdabae?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
@@ -35,5 +38,5 @@
 [](<>)<br/>
 
 ---
-### Task - Tigran
+### React Task - Tigran
 

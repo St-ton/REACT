@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.div {
+  display: flex;
+}
+.total {
+  font-size: 24px;
+  color: red;
+  font-weight: 900;
+}
