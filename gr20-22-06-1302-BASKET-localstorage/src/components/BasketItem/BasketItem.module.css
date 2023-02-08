@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+span {
+  font-size: 16px;
+  color: black;
+}
+.title {
+  font-size: 18px;
+}
+
+.price {
+  font-size: 16px;
+  color: red;
+}
+
+.count {
+  font-size: 16px;
+  color: blue;
+}
+.btn_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 2px 5px;
+  border: 1px solid gray;
+  font-weight: 900;
+}
+
+.btn_red {
+  background-color: red;
+}
+.btn_green {
+  background-color: green;
+}

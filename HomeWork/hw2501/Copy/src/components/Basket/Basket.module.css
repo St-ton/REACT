@@ -1,0 +1,30 @@
+.card {
+  /* display: flex;
+  flex-direction: column;*/
+  width: 400px;
+  height: 620px;
+  border: 3px solid gray;
+  border-radius: 20px 20px 0 0;
+  background-color: azure;
+  box-shadow: 5px 5px 10px 5px gray;
+  margin-top: 10px;
+}
+h2 {
+  text-align: center;
+  margin-top: 10px;
+}
+.total_count {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  color: red;
+  margin: 15px;
+}
+
+.total_price {
+  text-align: center;
+  font-size: 24px;
+  color: blue;
+  font-weight: 600;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,13 @@
+.tlt_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.btn_clear {
+  background-color: #e65b5b;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}

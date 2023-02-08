@@ -28,7 +28,7 @@ export default function UserContainer() {
           }
         </div>
         <div className={uc.div}>
-          <p className={uc.total}>Users: {users.length}</p>
+          <p className={uc.total}>Users total: {users.length}</p>
         </div>
         
     </div>
