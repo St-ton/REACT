@@ -1,5 +1,6 @@
 import React from 'react'
 import ProductContainer from "../ProductContainer/ProductContainer";
+import s from './App.module.css'
 
 function App()
 {

@@ -1,0 +1,8 @@
+.wrapper {
+  width: 85%;
+  height: 500px;
+  margin: 20px auto;
+  border: 2px solid gray;
+  border-radius: 20px;
+  overflow-y: hidden;
+}

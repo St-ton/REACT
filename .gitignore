@@ -1,7 +1,5 @@
-
-Test/
-ulbi-tv/
+ClearApp
 *.zip
 *.docx
-
+.gitignore
 

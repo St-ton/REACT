@@ -5,11 +5,11 @@ import BasketContainer from '../BasketContainer/BasketContainer';
 import Product from "../Product/Product";
 import s from './ProductContainer.module.css'
 
-function  ProductContainer () {
+export default function ProductContainer () {
   
  const [products, setProducts] = useState([]);
  const [basket, setBasket] = useState([]);
-
+  
   useEffect(() =>
   {
     (async () =>{
@@ -26,8 +26,12 @@ function  ProductContainer () {
     setBasket(basket.filter(({ id }) => products_ids.includes(id)));
   }, [products]);
 
-  const deleteProduct = delId => {   
-    setProducts(products.filter(({ id }) => id !== delId));
+  const deleteProduct = delId =>
+  {
+    let confirm = window.confirm("Are you sure?");
+    if (confirm){        
+      setProducts(products.filter(({ id }) => id !== delId));
+      }
   }
 
   const addToBasket = value =>{
@@ -59,19 +63,33 @@ function  ProductContainer () {
      }
  }
   
-  const clearBasket = () => setBasket([]);
+  const clearBasket = () => {
+    
+    let confirm = window.confirm("Are you sure?");
+    if (confirm){
+      setBasket([]);      
+    }
+  }
 
   const deleteFromBasket = value =>
-    setBasket(basket.filter(({id}) => id !== value));   
+  {
+    let confirm = window.confirm("Are you sure?");
+    if (confirm)
+    {
+      setBasket(basket.filter(({ id }) => id !== value));
+    }
+  }
   
   return (
     <div>
+      <h1 className={s.title}>PRODUCTS from {<a href='https://dummyjson.com/products'>LINK</a>} </h1>      
       <BasketContainer
         basket={basket}
         increment={increment}
         decrement={decrement}
         clearBasket={clearBasket}
-        deleteFromBasket={deleteFromBasket} />
+        deleteFromBasket={deleteFromBasket}
+       />
       
     <div className={s.container}>{
           products.map(product =>
@@ -81,10 +99,10 @@ function  ProductContainer () {
               deleteProduct={deleteProduct}
               addToBasket={addToBasket}
             />)
-    }
-    </div>  
+      }        
+      </div> 
+    <div className={s.footer}>SHOP XXL</div>  
     </div>
   )
 }
 
-export default ProductContainer

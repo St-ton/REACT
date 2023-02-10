@@ -1,0 +1,11 @@
+.wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: lightgray;
+  height: 100px;
+  color: blue;
+}
+h1 {
+  text-align: center;
+}

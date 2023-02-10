@@ -6,14 +6,10 @@ export default function BasketCalculation({ basket, clearBasket }){
   const totalCount = basket.reduce((acc,{count}) => acc + count, 0);
 
   return (
-    <div className={s.tlt_container}>
-      <div>
-        <p>Total Count: {totalCount}</p>
-        <p>Total Summa: {totalSum}</p>
-      </div>
-      <div>
-        <button className={s.btn_clear} onClick={() => clearBasket()}>Clear Basket</button>
-        </div>
+    <div className={s.container}>      
+    <div className={s.title}><span>Total Count: </span> {totalCount}</div>  
+    <div className={s.summa}><span>Total Summa: $ </span> {totalSum}</div>  
+    <button className={s.btn_clear} onClick={() => clearBasket()}>Clear</button>
     </div>
   )
 }

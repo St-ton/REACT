@@ -1,38 +1,35 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import About from './components/About/About';
+import Notes from './components/Notes/Notes';
+import Contacts from './components/Contacts/Contacts';
+import Footer from './components/Footer/Footer';
+import { Route, Routes } from 'react-router-dom';
 
-function App() {
-  const [notes, setNotes] = useState([
-    {
-      id: 0,
-      text: 'React Router DOM',
-    },
-    {
-      id: 1,
-      text: 'Axios vs Fetch',
-    },
-  ]);
-
+export default function App() {
   return (
     <div className="App">
-      <h1>Темы занятий</h1>
-      <ul>
-        {notes.map(elem => (
-          <li key={elem.id}>{elem.text}</li>
-        ))}
-        ;
-      </ul>
+      <Header />
+      <Routes>
+        <Route element={<Notes />} path="/" />
+        <Route element={<About />} path="/about" />
+        <Route element={<Contacts />} path="/contacts" />
+        <Route
+          element={
+            <img
+              src="https://feature-sliced.design/assets/ideal-img/visual_schema.d700567.1030.jpg"
+              alt=""
+            />
+          }
+          path="/about/info"
+        />
+      </Routes>
+      <Footer />
     </div>
-    // Макса Вариант
-    //     {notes.map(({ id, text }) => (
-    //       <li key={id}>{text}</li>
-    //     ))}
-    // </div>
   );
 }
-
-export default App;
 
 //* Первая часть урока
 

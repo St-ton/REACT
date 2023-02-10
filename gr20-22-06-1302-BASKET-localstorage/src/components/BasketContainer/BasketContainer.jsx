@@ -8,11 +8,18 @@ export default function BasketContainer({
   increment,
   decrement,
   clearBasket,
-  deleteFromBasket })
+  deleteFromBasket,
+  })
 {
-  
-  return (
-    <div className={s.container }>
+  let classBasket = s.container;  
+  if (basket.length === 0) {
+     classBasket = s.disabled;    
+   }
+  const buy = () => alert('Are You have Money?');
+
+    return (
+      <div className={ classBasket }>     
+      <h3>SHOPPING CART</h3>
       {
         basket.map(item =>
           <BasketItem
@@ -20,13 +27,14 @@ export default function BasketContainer({
             {...item}
             increment={increment}
             decrement={decrement}
-            deleteFromBasket ={deleteFromBasket}
+            deleteFromBasket={deleteFromBasket}            
           />          
         )        
     }
       <BasketCalculation
         basket={basket}
         clearBasket={clearBasket} />
+       <button className={s.buy} onClick={() => buy()}>BUY</button>
     </div>
   )
 } 

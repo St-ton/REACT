@@ -1,13 +1,33 @@
-.tlt_container {
+.container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgba(107, 220, 132, 0.1);
+  box-shadow: 2px 2px 5px lightgray;
 }
+
 .btn_clear {
   background-color: #e65b5b;
   padding: 5px 20px;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.container span {
+  font-size: 14px;
+  color: black;
+  font-weight: 500;
+}
+
+.summa,
+.title {
+  font-size: 18px;
+  color: red;
+  font-weight: 900;
 }

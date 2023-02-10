@@ -14,13 +14,13 @@ export default function BasketItem({
  
   return (
     <div className={s.card}>
-      <p className={s.title}>{title}</p>
-      <p className={s.price}><span>Цена: </span>{price} $</p>
-      <div className={s.btn_container}>
-        <button className={s.btn}onClick={() => decrement(id)}> - </button>
+     <div className={s.title}>{title}</div>  
+     <div className={s.price}><span>$: </span>{price}  </div>
+     <div className={s.btn_container}>
+        <button className={[s.btn,s.red].join(' ')} onClick={() => decrement(id)}>-</button>
         <p className={s.count}>{count}</p>
-        <button className={s.btn} onClick={() => increment(id)} > + </button>
-        <button onClick={() => deleteFromBasket(id)}>x</button>
+        <button className={[s.btn,s.green].join(' ')} onClick={() => increment(id)}>+</button>
+        <button className={s.btn_del} onClick={() => deleteFromBasket(id)}>x</button>
       </div>
     </div>
   )

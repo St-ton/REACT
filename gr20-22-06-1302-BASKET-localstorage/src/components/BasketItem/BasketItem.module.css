@@ -1,44 +1,93 @@
 .card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
-  margin: 10px;
+  /* margin: 5px; */
   margin-bottom: 10px;
-  border: 1px solid gray;
+  border: 1px solid lightgray;
   border-radius: 5px;
+  box-shadow: 2px 2px 5px lightgray;
 }
-span {
-  font-size: 16px;
+
+.card span {
+  font-size: 14px;
   color: black;
 }
+
 .title {
-  font-size: 18px;
+  width: 35%;
+  font-size: 14px;
+  text-align: left;
+  overflow: hidden;
 }
 
 .price {
-  font-size: 16px;
+  font-size: 14px;
   color: red;
 }
 
-.count {
-  font-size: 16px;
-  color: blue;
-}
 .btn_container {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  font-size: 14px;
 }
 
-.btn {
-  padding: 2px 5px;
-  border: 1px solid gray;
+/* .btn {
+  box-sizing: initial; 
+  width: 20px;
+  height: 15px;
+  padding: 5px 0;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 50%; 
   font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+*/
+.btn {
+  box-sizing: content-box;
+  background-color: lightgray;
+  border: none;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.btn_red {
-  background-color: red;
+.count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 12px;
+  width: 20px;
+  height: 25px;
+  font-weight: 900;
+  color: black;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
 }
-.btn_green {
-  background-color: green;
+
+.red {
+  color: red;
+  border-radius: 6px 0 0 6px;
+}
+
+.green {
+  color: green;
+  border-radius: 0 6px 6px 0;
+}
+
+.btn_del {
+  box-sizing: initial;
+  width: 20px;
+  height: 15px;
+  padding: 5px;
+  margin-left: 20px;
+  background-color: #e65b5b;
+  border: none;
+  border-radius: 5px;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 25%;
 }

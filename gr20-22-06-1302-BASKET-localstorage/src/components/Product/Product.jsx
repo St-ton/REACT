@@ -8,6 +8,7 @@ export default function Product({ id, title, description, price, image, deletePr
 
     <div className={s.card}>
       {/* <div className={s.img_container}></div> */}
+      
       <img src={image} alt={title} />
       <p className={s.title}>{title}</p>
       <p className={s.descr}>{description}</p>
