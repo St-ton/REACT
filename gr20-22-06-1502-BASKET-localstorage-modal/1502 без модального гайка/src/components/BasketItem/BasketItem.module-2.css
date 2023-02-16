@@ -1,0 +1,71 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px lightgray;
+}
+
+.card span {
+  font-size: 16px;
+  color: black;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.price {
+  font-size: 16px;
+  color: red;
+}
+
+.count {
+  font-size: 16px;
+  color: blue;
+}
+
+.btns_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  padding: 2px 5px;
+  border: 1px solid gray;
+  font-weight: 900;
+  /* box-sizing: content-box;
+  background-color: lightgray;
+  border: none;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  cursor: pointer; */
+}
+
+.btn_del {
+  box-sizing: initial;
+  width: 20px;
+  height: 15px;
+  padding: 5px;
+  margin-left: 20px;
+  background-color: #e65b5b;
+  border: none;
+  border-radius: 5px;
+  font-weight: 900;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 25%;
+}
+
+.btn_red {
+  background-color: red;
+}
+
+.btn_green {
+  background-color: green;
+}

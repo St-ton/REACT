@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  /* background-color: rgba(107, 220, 132, 0.1); */
+  box-shadow: 2px 2px 8px lightgray;
+}
+
+.btn_clear {
+  background-color: #e65b5b;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.4s;
+}
+
+.btn_clear:hover {
+  opacity: 1;
+}
+
+.container span {
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+}
+
+.summa,
+.title {
+  font-size: 18px;
+  color: red;
+  font-weight: 900;
+}

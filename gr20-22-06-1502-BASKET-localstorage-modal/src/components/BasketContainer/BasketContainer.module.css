@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 3px solid gray;
+  /* box-shadow: 5px 5px 5px lightgray, -5px -5px 5px lightgray; */
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.container h3 {
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+}
+
+.buy {
+  padding: 5px 5px;
+  margin-top: 15px;
+  color: #e65b5b;
+  background-color: #6bdc84;
+  letter-spacing: 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  /* box-shadow: 3px 3px 5px lightgray, -3px -3px 5px lightgray; */
+  box-shadow: 3px 3px 5px lightgray;
+  border: 1px solid #6bdc84;
+}
+
+.buy:hover {
+  /* opacity: 0.8; */
+  color: white;
+  box-shadow: none;
+}

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import AddTaskForm from './AddTaskForm.jsx';
 import UpdateForm from './UpdateForm.jsx';
 import ToDo from './ToDo.jsx';
@@ -19,10 +19,26 @@ function App() {
   const [value, setValue] = useState('');
   const [valueDate, setValueDate] = useState('');
 
-  // const [day, setDay] = useState('');
+  useEffect(() => {
+    const storedToDo = JSON.parse(localStorage.getItem('toDo')) || [];
+    setToDo(storedToDo);
+  }, []);
 
-  const addTask = () => {
-    if (newTask) {
+  useEffect(() => {
+    localStorage.setItem('toDo', JSON.stringify(toDo));
+  }, [toDo]);
+
+  const addTask = e => {
+    e.preventDefault();
+    if (
+      value === 'Select' ||
+      value === '' ||
+      valueDate === 'Select' ||
+      valueDate === '' ||
+      newTask === ''
+    ) {
+      alert('Please fill in all fields...');
+    } else {
       let num = toDo.length + 1;
       let newEntry = {
         id: num,
@@ -31,29 +47,22 @@ function App() {
         value: value,
         valueDate: valueDate,
       };
-
-      // if (value === '') {
-      //   alert('Select please Week Day');
-      // } else if (valueDate === '') {
-      //   alert('Select please Importance');
-      // } else {
-
       setToDo([...toDo, newEntry]);
       setNewTask('');
     }
   };
 
   const deleteTask = id => {
-    let conf = window.confirm('Are you DELETE Task ?');
-    if (conf) {
+    let confirmDelete = window.confirm('Are you sure to DELETE the Task ?');
+    if (confirmDelete) {
       let newTasks = toDo.filter(task => task.id !== id);
       setToDo(newTasks);
     }
   };
 
   const deleteDay = value => {
-    let conf = window.confirm('Are you DELETE Week Day ?');
-    if (conf) {
+    let confirmDelete = window.confirm('Are you sure to DELETE the Day ?');
+    if (confirmDelete) {
       let newToDo = toDo.filter(task => task.valueDate !== value);
       setToDo(newToDo);
     }
@@ -73,6 +82,9 @@ function App() {
     setUpdateData('');
   };
 
+  // if (e.target.value === '') {
+  //   alert('Write please Task ...');
+  // }
   const changeTask = e => {
     let newEntry = {
       id: updateData.id,
@@ -82,29 +94,49 @@ function App() {
     setUpdateData(newEntry);
   };
 
-  const updateTask = e => {
-    let filterRecords = [...toDo].filter(task => task.id !== updateData.id);
-    let updateObj = [...filterRecords, updateData];
-    setToDo(updateObj);
-    setUpdateData('');
-  };
-  function chengeSelect(event) {
+  function changeSelect(event) {
     setValue(event.target.value);
+    //   if (event.target.value === '') {
+    //     alert('Select please Importance');
+    //   }
   }
 
-  function chengeDate(event) {
+  function changeDate(event) {
     setValueDate(event.target.value);
+    //   if (event.target.value === '') {
+    //     alert('Select please Week Day');
+    //   }
+  }
+
+  function updateTask() {
+    let filterTodo = [...toDo].filter(task => task.id !== updateData.id);
+    let editTask = {
+      id: updateData.id,
+      title: updateData.title,
+      status: updateData.status ? true : false,
+      value: value,
+      valueDate: valueDate,
+    };
+    let updateTodo = [...filterTodo, editTask];
+    setToDo(updateTodo);
+    setUpdateData('');
+    //
+    // почему то не сработало, если не фильтровать массив стр. 105 и 113, а сразу перебирать массив и в нем заменить такс исходный на отредактированный
+    // let updateTodo = [...toDo].map((task, i) => (i === updateData.id ? editTask : task));
+    //
   }
 
   return (
     <div className="container App">
       <div className="text">
-        Для меня это ДЗ оказалось супер трудное. Теоретически я процентов на 50% понимал, что и как
-        нужно сделать по архитектуре компонентов. Но реализовать это через код для меня оказалось
-        непосильным. Поэтому с разрешения <span className="span_text">Валерии Куликовой</span> взял
-        ее код и в течении 7 часов только на половину разобравшись в нем переделал немного стили и
-        добавил удаление дня недели при наведении на блок с днем. Как мне показалось по заданию -
-        при наведении на блок дня недели не совсем правильный выбор для удаления
+        ToDo мы на уроке рассмотрели поверхностно и оно, как мне кажется, сильно отличалось от
+        текущего. Поэтому обращался за помощью к{' '}
+        <span className="span_text">Валерии Куликовой</span>
+        <p>
+          ToDo реализовано с сохранением в LocalStorage. Но не получилось реализовать
+          фильтрацию/сортировку выполненных дел в конец дня.
+          <p className="span_text">Хотелось бы получить от вас СОВЕТ - как это реализовать</p>
+        </p>
       </div>
       {updateData && updateData ? (
         <UpdateForm
@@ -113,8 +145,8 @@ function App() {
           updateTask={updateTask}
           cancelUpdate={cancelUpdate}
           value={value}
-          chengeSelect={chengeSelect}
-          chengeDate={chengeDate}
+          changeSelect={changeSelect}
+          changeDate={changeDate}
           valueDate={valueDate}
         />
       ) : (
@@ -123,12 +155,13 @@ function App() {
           setNewTask={setNewTask}
           addTask={addTask}
           value={value}
-          chengeSelect={chengeSelect}
-          chengeDate={chengeDate}
+          changeSelect={changeSelect}
+          changeDate={changeDate}
           valueDate={valueDate}
         />
       )}
       {toDo && toDo.length ? '' : 'No Tasks...'}
+
       <div className="days ">
         <Monday
           toDo={toDo}
@@ -201,9 +234,17 @@ function App() {
           deleteDay={deleteDay}
         />
       </div>
-      <div className="footer">To Do List App | 2023</div>
+      <div className="footer">
+        <div className="footer-wrapper">
+          ToDo List App | Link GihHub
+          <div className="footer-inner">
+            <a href="https://github.com/St-ton/react-todo/tree/master/src" target="_blank">
+              ToDo List App | Link GihHub
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
-
 export default App;

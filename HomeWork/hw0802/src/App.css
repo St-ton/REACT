@@ -20,36 +20,12 @@ body {
   color: aliceblue;
 }
 
-.footer {
-  width: 100%;
-  margin-bottom: -20px;
-}
-
 .App {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  /* margin-top: 20px; */
+  /* margin-bottom: 50px; */
   position: relative;
-  padding: 20px 50px;
-  background-color: #1abc9c;
-}
-
-.taskBg {
-  border-radius: 6px;
-  height: fit-content;
-  margin: 15px;
-  padding: 10px 140px 10px 15px;
-  text-align: left;
-  font-size: 22px;
-  position: relative;
-  width: fit-content;
-}
-
-.import {
-  background-color: #e74c3c;
-}
-
-.curr {
+  /* padding: 20px; */
   background-color: #1abc9c;
 }
 
@@ -58,34 +34,77 @@ body {
   align-items: center;
 }
 
+.taskBg {
+  border-radius: 6px;
+  height: fit-content;
+  margin: 5px;
+  padding: 5px 140px 10px 5px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
+  width: fit-content;
+}
+
+.import {
+  background-color: #e74c3c;
+  border: 1px solid #999;
+}
+
+.curr {
+  background-color: #1abc9c;
+  border: 1px solid #999;
+}
 .form-control {
   margin-bottom: 20px;
-  max-width: 545px;
+  /* max-width: 545px; */
   border: 1px solid black;
 }
 
 .taskNumber {
+  position: absolute;
+  top: 0;
+  left: 0;
   color: #999;
-  border: 2px solid #999;
-  border-radius: 50%;
-  width: 26px;
-  height: 26px;
+  border-right: 1px solid #999;
+  border-bottom: 1px solid #999;
+  border-radius: 0 0 50% 0;
+  width: 22px;
+  height: 22px;
   display: flex;
   text-align: center;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   margin-right: 8px;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s ease;
 }
 
 .taskBg .taskText {
-  flex: 1;
+  /* flex: 1; */
+  margin-left: 25px;
+}
+
+.taskBg:has(.done) {
+  background-color: white;
+  border: 1px solid #999;
 }
 
 .taskBg .done .taskText {
+  color: gray;
   text-decoration: line-through;
-  opacity: 0.3;
+  font-style: italic;
+  opacity: 0.4;
+}
+
+.taskBg .done .taskNumber {
+  /* opacity: 0; */
+  display: none;
+}
+
+.taskBg .done .import,
+.taskBg .done .curr {
+  background-color: white;
 }
 
 .taskBg .iconsWrap {
@@ -105,14 +124,21 @@ body {
 }
 
 .taskBg:hover .iconsWrap span {
-  color: yellow;
+  /* color: yellow; */
+  color: #999;
   opacity: 1;
+}
+
+.taskBg:hover .taskNumber {
+  color: white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
 }
 
 .ch_importance,
 .ch_calendar {
-  max-width: 180px;
-  margin: 0 5px;
+  max-width: 165px;
+  /* margin: 0 5px; */
 }
 .select {
   width: 150px;
@@ -136,45 +162,75 @@ body {
 
 .btn-success {
   background-color: #1abc9c;
-  width: 163px;
-  height: 45px;
+  width: 300px;
+  height: 50px;
   border-radius: 23px;
   margin-right: 0px;
   margin-bottom: 0px;
 }
 
+.btn-warning {
+  background-color: #e74c3c;
+  border: 1px solid #e74c3c;
+  color: white;
+  width: 300px;
+  height: 50px;
+  border-radius: 23px;
+  margin-right: 0px;
+  margin-top: 25px;
+}
+
+.btn-warning:hover {
+  color: white;
+}
+
+.row {
+  /* display: flex; */
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+.row input {
+  margin-right: 0;
+}
+
 .col {
-  max-width: 545px;
+  max-width: 960px;
+  display: flex;
+  justify-content: space-between;
+}
+.col input {
+  font-size: 22px;
 }
 
 .col-auto {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  align-items: baseline;
   margin-bottom: 20px;
-}
-
-.row {
-  /* display: flex; */
-  justify-content: space-between;
+  margin-left: 50px;
+  gap: 10px;
 }
 
 .formTable {
+  /* display: flex; */
+  /* justify-content: space-between; */
   background: #ecf0f1;
   padding: 20px 62px 10px 62px;
   border-radius: 20px;
   max-width: 1088px;
-  margin: 10px auto;
+  margin: 0px auto;
 }
 
 .days {
   display: flex;
   max-width: 1088px;
   background: white;
-  margin-bottom: 15px;
   border-radius: 20px;
   border: none;
   margin: 10px auto;
+  gap: 10px;
 }
 
 .days p {
@@ -185,16 +241,34 @@ body {
   border-radius: 20px 0px 0px 20px;
   width: 80px;
   height: auto;
-  padding: 5px 5px 5px 30px;
+  padding: 5px;
+  padding-left: 25px;
   border: 1px solid #34495e;
   color: white;
-  cursor: pointer;
+  /* cursor: pointer; */
+}
+
+.taskCont {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin-left: 10px; */
+}
+
+.ch_importance p,
+.ch_calendar p {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  /* color: black; */
+  color: #1abc9c;
 }
 
 .dayName {
   display: flex;
   position: relative;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 900;
 }
 
@@ -202,7 +276,7 @@ body {
   display: none;
   position: absolute;
   text-align: center;
-  top: px;
+  top: -10px;
   left: 0px;
   color: #e74c3c;
   width: 40px;
@@ -210,19 +284,106 @@ body {
   cursor: pointer;
 }
 
-.dayName:hover .del_day {
+.del_underline {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  border: 10px solid transparent;
+  border-top: 10px solid #e74c3c;
+}
+
+.days:hover {
+  box-shadow: 3px 3px 8px lightgrey, -3px -3px 8px lightgrey;
+}
+
+.dayName:hover .del_day,
+.days:hover .del_day {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.dayName:hover p {
+.dayName:hover p,
+.days:hover p {
   text-decoration: line-through;
   color: #e74c3c;
 }
 
-.taskCont {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 10px;
+.dayName:hover .fa-trash-can,
+.days:hover .dayName .fa-trash-can {
+  animation: colorTrash 2s linear infinite;
+}
+
+.dayName:hover .del_underline,
+.days:hover .del_underline {
+  display: block;
+  animation: scaleUnderline 2s linear infinite;
+}
+
+@keyframes scaleUnderline {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
+@keyframes colorTrash {
+  from {
+    color: transparent;
+  }
+  50% {
+    color: #e74c3c;
+  }
+  to {
+    color: #e74c3c;
+  }
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.footer-wrapper a {
+  color: #e74c3c;
+  text-decoration: none;
+}
+
+.footer-wrapper {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.6s linear;
+}
+
+.footer-inner {
+  width: 250px;
+  height: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  /* выдвигается слева 
+  top: 0;
+   left: -250px;*/
+  /* выдвигается снизу */
+  left: calc(50% - 125px);
+  bottom: -40px;
+  transition: all 0.7s linear;
+}
+
+.footer-wrapper:hover .footer-inner {
+  left: calc(50% - 125px);
+  /* выдвигается снизу */
+  bottom: 0px;
+}
+
+.footer-wrapper:hover {
+  color: transparent;
 }

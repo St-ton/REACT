@@ -1,11 +1,11 @@
 HomeWork/
-ClearApp/
 hw2101/
 hw2501/
 hw3001/
-hw0802/
-hw0802-2*
+hw0802
 node_modules/
+gaik_store_base/
+
 *.zip
 *.docx
 .gitignore
