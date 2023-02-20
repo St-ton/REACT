@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px 150px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.info {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn {
+  /* display: flex; */
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin: 20px;
+  font-size: 18px;
+  font-weight: 900;
+  border: 1px solid gray;
+}
+.spn {
+  /* display: flex; */
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+}
