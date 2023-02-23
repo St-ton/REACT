@@ -1,19 +1,20 @@
-import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import AddForm from '../AddForm/AddForm';
-import MinusForm from '../MinusForm/MinusForm';
-import './App.css';
+import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import AddForm from "../AddForm/AddForm";
+import MinusForm from "../MinusForm/MinusForm";
+import TasksContainer from "../TasksContainer/TasksContainer";
+import "./App.css";
 
 export default function App() {
-  const state = useSelector(state => state);
+  const state = useSelector((state) => state.clicker);
   const dispach = useDispatch();
 
   const increment = () => {
-    dispach({ type: 'INCREMENT' });
+    dispach({ type: "INCREMENT" });
   };
 
   const decrement = () => {
-    dispach({ type: 'DECREMENT' });
+    dispach({ type: "DECREMENT" });
   };
 
   // const clear = () => {
@@ -34,10 +35,11 @@ export default function App() {
         <button className="btn" onClick={decrement}>
           -
         </button>
-        <button className="btn" onClick={() => dispach({ type: 'CLEAR' })}>
+        <button className="btn" onClick={() => dispach({ type: "CLEAR" })}>
           Очистить
         </button>
       </div>
+      <TasksContainer />
     </div>
   );
 }

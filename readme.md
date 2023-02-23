@@ -28,9 +28,11 @@
 [gr22-1302-Basket-gitforkclone-grid](<https://vimeo.com/798368105/dc297116f3?embedded=true&source=vimeo_logo&owner=180459310>) | Lection:
 [gr23-1502-Basket-localstorage-modal](<https://vimeo.com/799101264/6b587fdbd4?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
-[Praktikum](https://github.com/St-ton/REACT/tree/master/gr24-25-2002-2202-redux) | Lection
-[gr24-2002-2202-redux1](<>) | Lection
-[gr25-2202-2202-redux2](<>)<br/>
+[Praktikum](https://github.com/St-ton/REACT/tree/master/gr24-2002-gr25-1-2202-redux) | Lection
+[gr24-2002-redux](<https://vimeo.com/800513321/9db72a4c8a?embedded=true&source=vimeo_logo&owner=180459310>) | Lection 0-1ч30м [gr25-1-2202-redux](<https://vimeo.com/801215836/d08c0c4a6b?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
+
+[Praktikum](https://github.com/St-ton/REACT/tree/master/gr25-2-2202-redux)
+Lection 1ч30м-3ч00м [gr25-2-2202-redux](<https://vimeo.com/801215836/d08c0c4a6b?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection
 [](<>)<br/>

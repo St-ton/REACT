@@ -1,11 +1,12 @@
-export const SUM = 'SUM';
-export const sumAction = payload => {
+export const SUM = "SUM";
+
+export const sumAction = (payload) => {
   return {
     type: SUM,
     payload: +payload,
   };
 };
-export const MINUS = 'MINUS';
+export const MINUS = "MINUS";
 
 /* 
 action
@@ -16,12 +17,12 @@ action
 */
 
 export const clickerReducer = (state = 0, action) => {
-  if (action.type === 'INCREMENT') {
+  if (action.type === "INCREMENT") {
     return state + 1;
-  } else if (action.type === 'DECREMENT') {
+  } else if (action.type === "DECREMENT") {
     // return state > 0 ? state - 1 : state;
     return state - 1;
-  } else if (action.type === 'CLEAR') {
+  } else if (action.type === "CLEAR") {
     return 0;
   } else if (action.type === SUM) {
     return state + action.payload;

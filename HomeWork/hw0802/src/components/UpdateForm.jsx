@@ -18,10 +18,10 @@ export default function UpdateForm({
             <div className="row ch_importance">
               <p>Importance</p>
               <select
-                required="required"
+                required=""
                 name="import"
                 value={value}
-                onChange={e => {
+                onChange={(e) => {
                   changeSelect(e);
                   // console.log(`2 ${e.target.value}`);
                 }}
@@ -36,9 +36,9 @@ export default function UpdateForm({
             <div className="row ch_calendar">
               <p>Week Day</p>
               <select
-                required="required"
+                required="r"
                 value={valueDate}
-                onChange={e => {
+                onChange={(e) => {
                   changeDate(e);
                   // console.log(`3 ${e.target.value}`);
                 }}
@@ -57,7 +57,7 @@ export default function UpdateForm({
             </div>
             <input
               value={updateData && updateData.title}
-              onChange={e => {
+              onChange={(e) => {
                 changeTask(e);
                 // console.log(`1 ${e.target.value}`);
               }}
