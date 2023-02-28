@@ -1,7 +1,0 @@
-.products-wrapper {
-  display: flex;
-  flex-direction: column;
-  background-color: aquamarine;
-  gap: 10px;
-  padding: 20px;
-}

@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px;
+  margin: 20px auto;
+  width: 95%;
+  height: 250px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.form-wrapper {
+  padding: 40px 0;
+}
+
+.post {
+  text-align: left;
+}
+.post span {
+  color: gray;
+  margin-left: 50px;
+}
+
+.form {
+  width: 60%;
+  margin: auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.control {
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.submit {
+  width: 50%;
+  margin: auto;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+}

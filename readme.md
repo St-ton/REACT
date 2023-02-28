@@ -29,10 +29,10 @@
 [gr23-1502-Basket-localstorage-modal](<https://vimeo.com/799101264/6b587fdbd4?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/gr24-2002-gr25-1-2202-redux) | Lection
-[gr24-2002-redux](<https://vimeo.com/800513321/9db72a4c8a?embedded=true&source=vimeo_logo&owner=180459310>) | Lection 0-1ч30м [gr25-1-2202-redux](<https://vimeo.com/801215836/d08c0c4a6b?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
+[gr24-2002-redux](<https://vimeo.com/800513321/9db72a4c8a?embedded=true&source=vimeo_logo&owner=180459310>) | Lection 0-1ч30м [gr25_1-2202-redux](<https://vimeo.com/801215836/d08c0c4a6b?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
-[Praktikum](https://github.com/St-ton/REACT/tree/master/gr25-2-2202-redux)
-Lection 1ч30м-3ч00м [gr25-2-2202-redux](<https://vimeo.com/801215836/d08c0c4a6b?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
+[Praktikum](https://github.com/St-ton/REACT/tree/master/gr25_2-2202-gr27-0103-redux-basket)
+Lection 1ч30м-3ч00м [gr25_2-2202-redux](<https://vimeo.com/801215836/d08c0c4a6b?embedded=true&source=vimeo_logo&owner=180459310>) | Lection [gr26-2702-redux-basket](<https://vimeo.com/802670332/49a0abd68f?embedded=true&source=vimeo_logo&owner=180459310>) | Lection [gr27-0103-redux-basket](<>) <br/>
 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection
 [](<>)<br/>
@@ -44,10 +44,11 @@ Lection 1ч30м-3ч00м [gr25-2-2202-redux](<https://vimeo.com/801215836/d08c0c4
 [Praktikum](https://github.com/St-ton/REACT/tree/master/a13-2101-react-blog) | Lection:
 [a13-2101-react-blog](<https://vimeo.com/791427199/6aa2cdabae?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
-[Praktikum](https://github.com/St-ton/REACT/tree/master/a14-17-2701-2402-useState-jsonserver-axios-router) | Lection:
+[Praktikum](https://github.com/St-ton/REACT/tree/master/a14-a17-2701-2402-useState-jsonserver-axios-router) | Lection:
 [a14-2701-useState-jsonserver](<https://vimeo.com/793328890/7087f1e0ae?embedded=true&source=vimeo_logo&owner=180459310>) | Lection:
 [a15-1002-jsonserver-axios-router](<https://vimeo.com/797687358/19196b6055?embedded=true&source=vimeo_logo&owner=180459310>)<br/> Lection:
-[a16-1702-jsonserver-axios-router](<https://vimeo.com/799822642/1ce97bc70f?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
+[a16-1702-jsonserver-axios-router](<https://vimeo.com/799822642/1ce97bc70f?embedded=true&source=vimeo_logo&owner=180459310>) | Lection:
+[a17-2402-redux](<https://vimeo.com/801946700/a141eb7f4e?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection:
 [](<>)<br/>
@@ -64,6 +65,12 @@ Lection 1ч30м-3ч00м [gr25-2-2202-redux](<https://vimeo.com/801215836/d08c0c4
 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/[t13-1802-reactrouter) | Lection:
 [t13-1802-reactrouter](<https://vimeo.com/800113329/1edcf0e67b?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
+
+[Praktikum](https://github.com/St-ton/REACT/tree/master/t14-2502-) | Lection:
+[t14-2502-](<<https://vimeo.com/802246230/016aa63f62?embedded=true&source=vimeo_logo&owner=180459310>>)<br/>
+
+
+
 
 [Praktikum](https://github.com/St-ton/REACT/tree/master/) | Lection:
 [](<>)<br/>
