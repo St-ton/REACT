@@ -1,0 +1,48 @@
+.item-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border: 1px solid gray;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+.item-container span {
+  display: block;
+  /* margin: 0; */
+  /* padding: 0; */
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+
+.id {
+  margin-left: 0;
+}
+
+.count {
+  font-weight: 900;
+  color: blue;
+  text-align: left;
+}
+
+.item-container button {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 1px;
+}
+
+.item-container .del {
+  margin-left: auto;
+  margin-right: 0;
+  position: absolute;
+  right: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+  /* align-self: end; */
+  background-color: lightcoral;
+}

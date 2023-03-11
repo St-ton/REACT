@@ -1,0 +1,28 @@
+.basket-container {
+  display: block;
+  position: relative;
+  width: 600px;
+  border: 1px solid gray;
+  padding: 25px 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.basket-container-dis {
+  display: none;
+}
+
+.basket-container h2 {
+  padding: 0 15px;
+  position: absolute;
+  top: -15px;
+  right: 20px;
+  /* border-top: 1px solid gray; */
+  border-bottom: 3px solid gray;
+  border-radius: 10px;
+}
+
+.basket-container button {
+  padding: 5px;
+}

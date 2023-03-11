@@ -1,0 +1,14 @@
+* {
+  /* padding: 5px; */
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: azure;
+}
+
+.header {
+  width: 100%;
+}
+.main {
+  padding: 50px 20px;
+}
